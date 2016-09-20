@@ -1,4 +1,10 @@
+%{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-java
+%global commit 2b0bd48cb5140c49501e90387a4a8ea9268fd681
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:           puppet-java
 Version:        XXX
@@ -8,7 +14,7 @@ License:        Apache-2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-java
 
-Source0:        http://github.com/puppetlabs/puppetlabs-java/archive/%{version}.tar.gz
+Source0:        http://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 
