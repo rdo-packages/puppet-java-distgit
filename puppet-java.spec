@@ -7,8 +7,8 @@
 
 
 Name:           puppet-java
-Version:        XXX
-Release:        XXX
+Version:        1.6.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs the correct Java package on various platforms.
 License:        Apache-2.0
 
@@ -49,4 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/java/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.6.0-1.2b0bd48.git
+- Newton update 1.6.0 (2b0bd48cb5140c49501e90387a4a8ea9268fd681)
+
 
