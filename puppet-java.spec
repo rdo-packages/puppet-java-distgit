@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-java
-%global commit 2b0bd48cb5140c49501e90387a4a8ea9268fd681
+%global commit d27b0af5a91de82efd2f1adb915a4ac2635bdbb8
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -8,7 +8,7 @@
 
 Name:           puppet-java
 Version:        1.6.0
-Release:        1%{?alphatag}%{?dist}
+Release:        2%{?alphatag}%{?dist}
 Summary:        Installs the correct Java package on various platforms.
 License:        Apache-2.0
 
@@ -49,6 +49,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/java/
 
 
 %changelog
+* Tue Nov 15 2016 Alfredo Moralejo <amoralej@redhat.com> 1.6.0-2.d27b0af.git
+- Newton update 1.6.0 (d27b0af5a91de82efd2f1adb915a4ac2635bdbb8)
+
 * Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 1.6.0-1.2b0bd48.git
 - Newton update 1.6.0 (2b0bd48cb5140c49501e90387a4a8ea9268fd681)
 
