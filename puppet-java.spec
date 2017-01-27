@@ -10,7 +10,7 @@ Name:           puppet-java
 Version:        XXX
 Release:        XXX
 Summary:        Installs the correct Java package on various platforms.
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppetlabs/puppetlabs-java
 
