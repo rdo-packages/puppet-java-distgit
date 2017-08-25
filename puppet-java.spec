@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-java
-%global commit 2b0bd48cb5140c49501e90387a4a8ea9268fd681
+%global commit 43aa9af1b258abfb671b640867dbafc67681565e
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-java
-Version:        XXX
-Release:        XXX
+Version:        2.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs the correct Java package on various platforms.
 License:        ASL 2.0
 
@@ -49,5 +49,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/java/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 2.0.0-1.43aa9afgit
+- Pike update 2.0.0 (43aa9af1b258abfb671b640867dbafc67681565e)
 
 
