@@ -53,4 +53,3 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/java/
 - Update to post 5.0.1 (e57cbc84ec8d77cee708afbc4e53274d0352f5ba)
 
 
-
