@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppetlabs-java
-%global commit 2b0bd48cb5140c49501e90387a4a8ea9268fd681
+%global commit 5a0d540d78a9f06ff014677c7bdf3165da041d65
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-java
-Version:        XXX
-Release:        XXX
+Version:        6.2.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Installs the correct Java package on various platforms.
 License:        ASL 2.0
 
@@ -49,5 +49,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/java/
 
 
 %changelog
+* Tue May 05 2020 RDO <dev@lists.rdoproject.org> 6.2.0-1.5a0d540git
+- Update to post 6.2.0 (5a0d540d78a9f06ff014677c7bdf3165da041d65)
+
 
 
